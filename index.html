@@ -1,2 +1,55 @@
 
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grox</title>
+     <style> 
+	body{
+		margin: 0;
+		height: 100vh;
+		
+		display:grid;
+		grid-template-columns:200px 1fr;
+		grid-template-rows: 80px 1fr;
+
+		grid-template-areas:
+		 "top top" 
+		"menu content";
+
+	}
+	header{
+		grid-area:top;
+		background-color:#C0C0C0;
+    		border: 1px solid black;
+	}
+	nav{
+		grid-area:menu;
+		top-padding:10px;
+		text-align: center;
+		background-color:#C0C0C0;
+
+	}
+	main{
+		grid-area:content;
+		background-color:#FFFFFF;
+		border: 1px solid black;
+
+	}
+    </style>
+</head>
+<body>
+	<header> 
+		<img src="https://d2w9rnfcy7mm78.cloudfront.net/10042458/original_4182fa7dec7996e6e7d4a403d7f240d0.gif?1609236879?bc=0" > </img>	
+		<h1>Grox Website </h1>
+  </header>
+	<nav>
+		<a href="google.com">My Projects</a>
+	</nav>
+	<main>
+		<h1>Hello Traveler, Welcome to the heaven.</h1>
+		<p>This page looks old? alright... its is simplicity.</p>
+	</main>
+</body>
+</html>
